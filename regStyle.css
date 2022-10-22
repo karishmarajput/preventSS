@@ -1,0 +1,10 @@
+.formDiv{
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.formDiv div{
+    width: 50%;
+    align-items: center;
+}
