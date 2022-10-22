@@ -34,7 +34,7 @@ function submitEmail(){
     console.log('submit');
     if(true){
         document.getElementById('loginEmailDiv').style.display="none";
-        document.getElementById('loginPasswordDiv').style.display="flex";
+        document.getElementById('loginPasswordDiv').style.display="block";
     }else{
         alert('enter a valid email');
     }
