@@ -21,65 +21,77 @@
       </a>
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link" href="#">Register</a>
+          <a class="nav-link" href="register.html">Register</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
-        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="index.html">Login</a>
+        </li> -->
       </ul>
     </div>
   </nav>
-  <div class="menuDiv">
-    <div id="menu">
-      <div id="item1" class="item1 item">
-        <div class="content" id="content1">one</div>
-      </div>
-      <div id="item2" class="item2 item">
-        <div class="content" id="content2">
-          <div>a<br> 2</div>div>
+  <div id="loginEmailDiv" class="loginEmailDiv">
+    <div class="loginEmail">
+      <image src="https://media.tenor.com/Ej3BJBhwt_0AAAAM/cute-kitty.gif"></image>
+        <!-- <form> -->
+          <input type="email" placeholder="Enter you email" value="" id="email" class="form-fill" /><br />
+          <button onclick="submitEmail()" class="btn btn-success">Submit</button>
+        <!-- </form> -->
+    </div>
+  </div>
+  <div id="loginPasswordDiv"class="loginPasswordDiv">
+    <div class="menuDiv">
+      <div id="menu">
+        <div id="item1" class="item1 item">
+          <div class="content" id="content1">one</div>
+        </div>
+        <div id="item2" class="item2 item">
+          <div class="content" id="content2">
+            <div>a<br> 2</div>div>
+          </div>
+        </div>
+        <div id="item3" class="item3 item">
+          <div class="content" id="content3"></div>
+        </div>
+        <div id="item4" class="item4 item">
+          <div class="content" id="content4">one 2</div>
+        </div>
+        <div id="item5" class="item5 item">
+          <div class="content" id="content5">five</div>
+        </div>
+        <div id="wrapper6">
+          <div id="item6" class="item6 item">
+            <div class="content" id="content6">six</div>
+          </div>
+        </div>
+        <div id="center">
         </div>
       </div>
-      <div id="item3" class="item3 item">
-        <div class="content" id="content3">one 2</div>
-      </div>
-      <div id="item4" class="item4 item">
-        <div class="content" id="content4">one 2</div>
-      </div>
-      <div id="item5" class="item5 item">
-        <div class="content" id="content5">five</div>
-      </div>
-      <div id="wrapper6">
-        <div id="item6" class="item6 item">
-          <div class="content" id="content6">six</div>
-        </div>
-      </div>
-      <div id="center">
+    </div>
+  
+    <div class="button-main">
+      <button onclick="antiClockWise()" class="btn btn-primary">
+        <i class="bi bi-arrow-counterclockwise"></i>
+        Anti Clockwise
+      </button>
+      <button onclick="clockWise()" class="btn btn-primary">
+        <i class="bi bi-arrow-clockwise"></i>
+        Clockwise
+      </button><br>
+      <button onclick="leftBtn()" class="btn btn-primary">
+        <i class="bi bi-arrow-left-circle"></i>
+        Left
+      </button>
+      <button onclick="rightBtn()" class="btn btn-primary">
+        Right
+        <i class="bi bi-arrow-right-circle"></i>
+      </button><br>
+      <div class="submission">
+        <input type="text" placeholder="Enter you password" value="" readonly id="password" class="form-fill" /><br />
+        <button onclick="checkPass()" class="btn btn-success">Submit</button>
       </div>
     </div>
   </div>
 
-  <div class="button-main">
-    <button onclick="antiClockWise()" class="btn btn-primary">
-      <i class="bi bi-arrow-counterclockwise"></i>
-      Anti Clockwise
-    </button>
-    <button onclick="clockWise()" class="btn btn-primary">
-      <i class="bi bi-arrow-clockwise"></i>
-      Clockwise
-    </button><br>
-    <button onclick="leftBtn()" class="btn btn-primary">
-      <i class="bi bi-arrow-left-circle"></i>
-      Left
-    </button>
-    <button onclick="rightBtn()" class="btn btn-primary">
-      Right
-      <i class="bi bi-arrow-right-circle"></i>
-    </button><br>
-    <div class="submission">
-      <input type="text" placeholder="Enter you password" value="" readonly id="password" class="form-fill" /><br />
-      <button onclick="checkPass()" class="btn btn-success">Submit</button>
-    </div>
-  </div>
   <script src="./script.js"></script>
 </body>
 
