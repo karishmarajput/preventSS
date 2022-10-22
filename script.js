@@ -28,8 +28,20 @@ let numbers = [
         outerOrbit: 6,
     }
 ]
+var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 function submitEmail(){
+    let email = document.getElementById('email').value;
+    console.log(email)
+    if(email == ''){
+        alert('Please enter the email');
+        return
+    }
+    if (!email.match(validRegex)) {
+
+        alert("Invalid email address!");
+        return
+    }
     // get the password and color for that email from backend if email exist in backend.
     console.log('submit');
     if(true){
