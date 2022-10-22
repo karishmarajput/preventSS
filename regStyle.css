@@ -1,3 +1,14 @@
+.main-form {
+    background-color: #81C6E8;
+    margin: 3rem 4rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.form-title {
+    padding-left: 2rem;
+}
+
 .formDiv {
     width: 100%;
     padding: 5rem;
@@ -14,4 +25,15 @@
     border-radius: 0.3rem;
     width: 6rem;
     margin-left: 0.5rem;
+}
+
+.submit-btn {
+    text-align: center;
+    justify-content: center;
+}
+
+.sub {
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.2rem;
 }
