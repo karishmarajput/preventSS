@@ -1,6 +1,6 @@
 let pass = document.getElementById('password');
 let colour = ['blue','green','yellow','red', 'pink','grey'];
-let userColour = "blue";
+let userColour = "yellow";
 let password = "acb123";
 let numbers = [
     {
@@ -28,6 +28,18 @@ let numbers = [
         outerOrbit: 6,
     }
 ]
+
+function submitEmail(){
+    // get the password and color for that email from backend if email exist in backend.
+    console.log('submit');
+    if(true){
+        document.getElementById('loginEmailDiv').style.display="none";
+        document.getElementById('loginPasswordDiv').style.display="flex";
+    }else{
+        alert('enter a valid email');
+    }
+ 
+}
 function updateColor(){
     for(let i = 1; i <= 6;i++){
         let id = "item"+i;

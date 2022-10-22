@@ -1,3 +1,6 @@
+.loginPasswordDiv{
+  display: none;
+}
 .menuDiv {
   padding: 4.2rem;
 }
