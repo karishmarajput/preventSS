@@ -63,7 +63,7 @@ function checkPass(){
     }
 }
 
-function antiClockWise(){
+function clockWise(){
     console.log('antiClock')
     console.log(colour);
     let newcolor = colour.slice();
@@ -75,7 +75,7 @@ function antiClockWise(){
     console.log(colour)
     updateColor();
 }
-function clockWise(){
+function antiClockWise(){
     console.log('Clock')
     let newcolor = colour.slice();
     console.log(newcolor)
