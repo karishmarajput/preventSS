@@ -10,6 +10,44 @@
   padding: 4.2rem;
 }
 
+
+.loginEmailDiv{
+  background-color: #FFFDD1;
+  margin: 3rem 4rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  align-items: center;
+}
+
+.loginEmail{
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+}
+
+.loginEmail image{
+  width: 25vh;
+}
+
+.loginEmail input{
+  width: 25vh;
+}
+
+.loginEmail button{
+  width: 25vh;
+}
+
+.navbar-brand{
+  display: flex;
+  justify-content: left;
+}
+
+.navbar-brand div{
+  padding: 0.5rem;
+  position: relative;
+  top: -3.5px;
+}
+
 #menu {
   background: #aaa;
   position: relative;
