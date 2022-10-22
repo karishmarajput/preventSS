@@ -1,6 +1,14 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+.navbar, .main-form{
+  background: rgba(255, 255, 255, 0.28) !important;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(26.7px);
+  -webkit-backdrop-filter: blur(26.7px);
+  border: 1px solid rgba(255, 255, 255, 0.568);
+}
 
 .navbar-brand{
     display: flex;
@@ -68,7 +76,10 @@
     padding: 0.2rem 0.7rem;
     color: grey;
 }
-
+body{
+    background-image: url('./asserts/bg-home.png');
+    background-size:cover;
+  }
 @media only screen and (max-width: 600px) {
     .formDiv{
       flex-direction: column;
@@ -79,5 +90,9 @@
     }   
     .main-form{
         margin: 1rem;
+    }
+    body{
+        background-image: url('./asserts/bg-fone.png');
+        background-size: cover;
     }
 }

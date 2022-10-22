@@ -32,7 +32,6 @@ var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9
 
 function submitEmail(){
     let email = document.getElementById('email').value;
-    console.log(email)
     if(email == ''){
         alert('Please enter the email');
         return
@@ -43,7 +42,6 @@ function submitEmail(){
         return
     }
     // get the password and color for that email from backend if email exist in backend.
-    console.log('submit');
     if(true){
         document.getElementById('loginEmailDiv').style.display="none";
         document.getElementById('loginPasswordDiv').style.display="block";
@@ -55,30 +53,21 @@ function submitEmail(){
 function updateColor(){
     for(let i = 1; i <= 6;i++){
         let id = "item"+i;
-        console.log(id);
         let con =  document.getElementById(id);
-        console.log(con)
         con.style.background = colour[i-1];
     }
 }
 updateColor()
 function updateContent(){
-    // let num1 = document.getElementById("one");
-    // num1.innerHTML = "2 a"
     for(let i = 1; i <= 6;i++){
         let id = "content"+i;
-        console.log(id);
         let con =  document.getElementById(id);
-        console.log(con)
         let str = numbers[i-1].innerOrbit +"  "+numbers[i-1].outerOrbit;
-        console.log(str)
         con.innerHTML= str
     }
 }
 updateContent();
-console.log(numbers);
 function checkPass(){
-    console.log(pass.value);
     if(pass.value === password){
         alert('correct password');
     }else{
@@ -88,15 +77,11 @@ function checkPass(){
 }
 
 function clockWise(){
-    console.log('antiClock')
-    console.log(colour);
     let newcolor = colour.slice();
-    console.log(newcolor)
     for(let i = 0; i < colour.length; i++){
         colour[i] = newcolor[i-1];
     }
     colour[0] = newcolor[colour.length - 1];
-    console.log(colour)
     updateColor();
 }
 function antiClockWise(){
@@ -112,11 +97,19 @@ function antiClockWise(){
 }
 function leftBtn(){
     let index = colour.indexOf(userColour);
-    console.log(index)
     pass.value += numbers[index].innerOrbit;
 }
 function rightBtn(){
     let index = colour.indexOf(userColour);
-    console.log(index)
     pass.value += numbers[index].outerOrbit;
+}
+let keydown = false;
+function userStartTying(){
+    if(!keydown){
+        keydown = true
+        let image = document.getElementById('henImage');
+        image.src = 'asserts/robot-dance-unscreen.gif';
+    }
+    return
+   
 }
