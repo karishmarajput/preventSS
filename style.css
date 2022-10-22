@@ -1,6 +1,11 @@
-.loginPasswordDiv{
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.loginPasswordDiv {
   display: none;
 }
+
 .menuDiv {
   padding: 4.2rem;
 }
