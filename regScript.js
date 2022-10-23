@@ -8,5 +8,9 @@ function submitRegForm(e){
     console.log(email)
     console.log(color)
     console.log(password)
+    alert('User created successfully');
+    location.reload();
+    // window.location = window.location.replace('register.html','index.html');
+
 
 }
