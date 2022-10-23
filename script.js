@@ -42,7 +42,7 @@ function submitEmail(){
         return
     }
     // get the password and color for that email from backend if email exist in backend.
-    if(true){
+    if(email == "abc@gmail.com"){
         document.getElementById('loginEmailDiv').style.display="none";
         document.getElementById('loginPasswordDiv').style.display="block";
     }else{
@@ -69,7 +69,8 @@ function updateContent(){
 updateContent();
 function checkPass(){
     if(pass.value === password){
-        alert('correct password');
+        // alert('correct password');
+        window.location += 'home.html' 
     }else{
         alert('incorrect');
         pass.value = "";
