@@ -1,6 +1,15 @@
 * {
   font-family: 'Poppins', sans-serif;
 }
+.navbar, .loginEmail{
+  background: rgba(255, 255, 255, 0.28) !important;
+  border-radius: 2%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(26.7px);
+  -webkit-backdrop-filter: blur(26.7px);
+  border: 1px solid rgba(255, 255, 255, 0.568);
+}
+
 
 .loginPasswordDiv {
   display: none;
@@ -8,6 +17,54 @@
 
 .menuDiv {
   padding: 4.2rem;
+}
+
+
+.loginEmailDiv{
+
+  padding: 1rem;
+  border-radius: 2rem;
+  align-items: center;
+}
+.bg-size{
+  display: flex;
+  justify-content: center;
+}
+
+.loginEmail{
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  width: 35%;
+  background-color: #d1e6f5;
+  padding: 1.8rem 0rem;
+  min-height: 70vh ;
+}
+
+.loginEmail image{
+  width: 80%;
+}
+
+.loginEmail input{
+  padding: .5rem;
+  width: 80%;
+  margin: .2rem;
+  margin-top: 1rem;
+}
+
+.loginEmail button{
+  width: 80%;
+}
+
+.navbar-brand{
+  display: flex;
+  justify-content: left;
+}
+
+.navbar-brand div{
+  padding: 0.5rem;
+  position: relative;
+  top: -3.5px;
 }
 
 #menu {
@@ -232,4 +289,18 @@
 
 .submission {
   margin-top: 1rem;
+}
+body{
+  background-image: url('./asserts/bg-home.png');
+  background-size:cover;
+}
+@media only screen and (max-width: 600px) {
+  .loginEmail{
+    width: 100%;
+  }
+  body{
+    background-image: url('./asserts/bg-fone.png');
+    background-size: cover;
+  }
+
 }

@@ -1,5 +1,5 @@
 function submitRegForm(e){
-    console.log('hello');
+
     let name = document.getElementById('regFirstName').value +" "+ document.getElementById('regLastName').value;
     let email = document.getElementById('regEmail').value;
     let password = document.getElementById('regPass').value;
